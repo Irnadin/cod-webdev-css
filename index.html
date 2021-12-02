@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
+
 <body>
-  
+  <h1>Hello!</h1>
+  <a href="https://www.youtube.com/watch?v=fyI_K_Oya74&ab_channel=webDev" target="_blank" rel="noopener noreferrer"> Ccылка на урок по селлекторах</a>
+  <br>
+  <h3>Спецефичность селекторов</h3>
+  <img class="weight" src="weight-of-selectors.jpg" alt="weight of selectors">
+  <p> Составные селектора</p>
+  <ul>
+    <li>груповые селектора
+      <p>Например</p>
+      <ul>
+        <li> <code> h1,
+            h2,
+            span {
+            color:red
+            }
+          </code>
+        </li>
+
+      </ul>
+    </li>
+    <li>Селектор потомок или контекстный селектор
+      <ul>
+        <li> <code> ul li code {color blue}</code> стили будут применены к последнму (дочерниму) елементу этой цепочки
+        </li>
+      </ul>
+    </li>
+    <li>Селектор прямого потомка
+      <ul>
+        <li> <span> <code> ul li > span {font-weight:bolt}</code></span> стили будут применены к span (дочерниму)
+          елементу
+          этой цепочки
+        </li>
+      </ul>
+    </li>
+    <li> Соседний селектор или следующий
+      <ul>
+        <li> <span> <code> ul li + li { } > span {font-weight:bolt}</code></span> стили будут применены к следующему
+          селектору после указанного
+
+        </li>
+      </ul>
+    </li>
+  </ul>
 </body>
+
 </html>

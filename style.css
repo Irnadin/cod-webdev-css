@@ -21,9 +21,9 @@ ul li > span {
 }
 /* Соседний или следующий селектор-стили будут применены к следующему селектору после указанного */
 
-ul li + li {
+/* ul li + li {
   text-decoration: underline coral 1px ;
-}
+} */
  /* Следующий елеммент - похож, но разделяеться тильдой (~) */
 
  br ~ h3 {
@@ -50,4 +50,89 @@ a[target="_blank"] {
       background-color: rebeccapurple;
     }
     /* #endregion */
-    
+
+    /* Псевдоклассы */
+     a.link {
+      color:black;
+      text-decoration: none;
+      background-color:lightblue;
+    }
+       a:visited {
+         color: rgb(26, 129, 5);
+       }
+    a:hover {
+      color: tomato;
+    }
+    a:active {
+      color: lightseagreen;
+    }
+    a:focus {
+      font-weight: bold;
+    } 
+    /* Псевдоелементы- используются для стилизации фрагментов текста */
+    p::first-letter {
+      font-size: 40px; ;
+    }
+    p::first-line {
+      text-decoration: underline;
+    }
+    p::selection {
+      background-color: lime;
+    }
+
+    h4::before{
+    content:"Частоиспользованые ";
+    color: rgb(224, 77, 77);
+    }
+    h4::after {
+      content: " !!!";
+      color: mediumvioletred;
+    }
+ /* Псевдоелементы, */
+ /* которые часто используются со списками */
+li.list1:first-child {
+  color: blue;
+}
+.list1:last-child {
+  color: brown;
+}
+
+/* Стилизация четных(even) и нечетных (odd) еле-ов */
+li.list2:nth-child(even) {
+color: rgb(26, 23, 219);
+}
+li.list2:nth-child(odd) {
+  color: rgb(46, 219, 23);
+}
+li.list1:nth-child(2) {
+  color: rgb(219, 23, 65);}
+
+  /* Если нужно добавить каждому третьему (3n), второму(2n) и тд. элементу начиная с первого */
+li.list3:nth-child(2n){
+  border: lightsalmon 1px dotted;
+}
+/* Отсчет идет не с первого элемента, а от первого! */
+li.list2:nth-child(2n + 1) {
+  border: lightsalmon 1px dotted;
+}
+
+/* Селектора для типов дочерних элементов */
+
+.text span:first-of-type {
+  color: red;
+}
+
+.text span:last-of-type {
+  color: green;
+}
+
+.text span:nth-of-type(2) {
+  border: 1px solid black;
+}
+/* Ниже показано как стилизовать элементы, кроме указанного, в примере класс .item */
+.list4 li:not(.item) {
+  border: 1px solid blue;
+}
+
+
+

@@ -71,12 +71,12 @@ a[target="_blank"] {
       font-weight: bold;
     } 
     /* Псевдоелементы- используются для стилизации фрагментов текста */
-    p::first-letter {
+    /*p::first-letter {
       font-size: 40px; ;
     }
     p::first-line {
       text-decoration: underline;
-    }
+    }*/
     p::selection {
       background-color: lime;
     }
@@ -135,5 +135,7 @@ li.list2:nth-child(2n + 1) {
   border: 1px solid blue;
 }
 
-
-
+.title {
+  font-size: large;
+  color: rgb(223, 12, 82);
+}

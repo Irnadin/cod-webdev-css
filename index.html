@@ -96,34 +96,58 @@
     <hr />
   </span>
 
-   <!-- not -->
-   <ul class="list4">
-     <li class="item">One</li>
-     <li class="item">Two</li>
-     <li>Three</li>
-     <li>Four</li>
-     <li class="item">Five</li>
-     <li>Six</li>
-   </ul>
+  <!-- not -->
+  <ul class="list4">
+    <li class="item">One</li>
+    <li class="item">Two</li>
+    <li>Three</li>
+    <li>Four</li>
+    <li class="item">Five</li>
+    <li>Six</li>
+  </ul>
 
-   <p class="title">Каскадность и наследование</p> 
-   
-   <a href="https://elad.medium.com/normalize-css-or-css-reset-9d75175c5d1e">Normalize CSS and CSS Reset</a>
-<p class="title">Блочная модель и отступы (Box Model, Padding & Margin)</p>
-<p>margin- это отступы между тегами
-  padding- отступы внутренние</p>
+  <p class="title">Каскадность и наследование</p>
+
+  <a href="https://elad.medium.com/normalize-css-or-css-reset-9d75175c5d1e">Normalize CSS and CSS Reset</a>
+  <p class="title">Блочная модель и отступы (Box Model, Padding & Margin)</p>
+  <p>margin- это отступы между тегами
+    padding- отступы внутренние</p>
   <br>
   <p>Для строчных элементов не применяються margin-top and margin-botton, а также указания размеров </p>
-<p>Если два рядом елемента имеют margine, то марджины не сумируються, а схлопываются.Растояние марджина будет равно большему марджину </p>
-<figure>
-  <img src="display.jpg" alt="Exampel dispay">
-  <figcaption>border-box говорит браузеру учитывать любые границы и внутренние отступы в значениях, которые вы
-    указываете в ширине и высоте элемента. Если вы выставите элементу ширину 100 пикселей, то эти 100 пикселей будут
-    включать в себя границы и внутренние отступы, а контент сожмётся, чтобы выделить для них место. Обычно это упрощает
-    работу с размерами элементов.</figcaption>
+  <p>Если два рядом елемента имеют margine, то марджины не сумируються, а схлопываются.Растояние марджина будет равно
+    большему марджину </p>
+  <figure>
+    <img src="display.jpg" alt="Exampel dispay">
+    <figcaption>border-box говорит браузеру учитывать любые границы и внутренние отступы в значениях, которые вы
+      указываете в ширине и высоте элемента. Если вы выставите элементу ширину 100 пикселей, то эти 100 пикселей будут
+      включать в себя границы и внутренние отступы, а контент сожмётся, чтобы выделить для них место. Обычно это
+      упрощает
+      работу с размерами элементов.</figcaption>
     <p>display:inline-block;-принимает свойства характерны и для блочных и для строчных элементов</p>
-</figure>
-   </body>
+  </figure>
+  <div class="position">
+    <p class="title">Позиционирование и размеры (Positioning & Sizing)
+      <br>
+      <div class="test">Position</div>
+      <div class="name">Position:static</div> -по умолчанию
+      <div class="name">Position:relative</div> -визульно ничего не изменяется до задания top, left, rigt,bottom.
+      создает новый поток, при сдвиге остаёться пустое пространство (остальные элементы как будто не видят перемен и
+      остаються на своих местах)
+      <br>
+      <div class="name">Position:absolute</div> - его отступы применяются относительно елемента, который имеет позицию
+      отличную от статик!
+      <div class="name">Position:fixed</div>- позиция всегда отщитываеться от края окна браузера и не зависит от
+      <div class="name">Position: sticky</div>- cмещается в границах родителя
+
+
+
+    </p>
+  </div>
+
+
+
+
+</body>
 
 
 

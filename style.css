@@ -138,4 +138,22 @@ li.list2:nth-child(2n + 1) {
 .title {
   font-size: large;
   color: rgb(223, 12, 82);
+  
+}
+ .position {
+   position: relative;
+ }
+
+.test {
+   width: 55px;
+  height: 30px;
+  border: 3px solid blue;
+  text-align: center;
+  position: relative;
+  top: 20px;
+  left: 100px;
+}
+.name {
+  background-color: cornsilk;
+  
 }

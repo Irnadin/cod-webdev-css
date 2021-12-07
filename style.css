@@ -162,3 +162,31 @@ li.list2:nth-child(2n + 1) {
 .img_size {
   width: 700px;
 }
+.wrapper {
+  background-color: rgb(202, 146, 61);
+  padding: 20px;
+}
+
+.wrapper::after {
+  content:'' ;
+  display: block;
+  clear: both;
+}
+.wrapper2 {
+  background-color: rgb(127, 133, 125);
+}
+.float1 {
+  background-color: cornsilk;
+   float: left;
+   width: 150px;
+}
+.float2 {
+  background-color: rgb(90, 202, 124);
+  float: left;
+  width: 150px;
+}
+.float3 {
+  background-color: rgb(113, 111, 235);
+   float: left;
+   width: 150px;
+}

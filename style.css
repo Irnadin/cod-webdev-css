@@ -155,5 +155,10 @@ li.list2:nth-child(2n + 1) {
 }
 .name {
   background-color: cornsilk;
+  overflow: ;
   
+}
+
+.img_size {
+  width: 700px;
 }

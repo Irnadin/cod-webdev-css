@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -86,15 +86,14 @@
     </ul>
   </div>
   <!-- *-of-type -->
-  <span class="text">
-    <span>First SPAN text</span>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repudiandae.</div>
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repudiandae.</div>
-    <span>Second SPAN text</span>
-    <span>Last SPAN text</span>
-    </div>
-    <hr />
-  </span>
+  <span class="text"> </span>
+  <span>First SPAN text</span>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repudiandae.</div>
+  <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, repudiandae.</div>
+  <span>Second SPAN text</span>
+  <span>Last SPAN text</span>
+  <hr />
+
 
   <!-- not -->
   <ul class="list4">
@@ -123,30 +122,54 @@
       включать в себя границы и внутренние отступы, а контент сожмётся, чтобы выделить для них место. Обычно это
       упрощает
       работу с размерами элементов.</figcaption>
-    <p>display:inline-block;-принимает свойства характерны и для блочных и для строчных элементов</p>
   </figure>
+      <p>display:inline-block;-принимает свойства характерны и для блочных и для строчных элементов</p>
   <div class="position">
-    <p class="title">Позиционирование и размеры (Positioning & Sizing)
-      <br>
-      <div class="test">Position</div>
-      <div class="name">Position:static</div> -по умолчанию
-      <div class="name">Position:relative</div> -визульно ничего не изменяется до задания top, left, rigt,bottom.
-      создает новый поток, при сдвиге остаёться пустое пространство (остальные элементы как будто не видят перемен и
-      остаються на своих местах)
-      <br>
-      <div class="name">Position:absolute</div> - его отступы применяются относительно елемента, который имеет позицию
-      отличную от статик!
-      <div class="name">Position:fixed</div>- позиция всегда отщитываеться от края окна браузера и не зависит от
-      <div class="name">Position: sticky</div>- cмещается в границах родителя
+    <p class="title">Позиционирование и размеры (Positioning & Sizing) </p>
+    <br>
+    <div class="test">Position</div>
+    <div class="name">Position:static</div> -по умолчанию
+    <div class="name">Position:relative</div> -визульно ничего не изменяется до задания top, left, rigt,bottom.
+    создает новый поток, при сдвиге остаёться пустое пространство (остальные элементы как будто не видят перемен и
+    остаються на своих местах)
+    <br>
+    <div class="name">Position:absolute</div> - его отступы применяются относительно елемента, который имеет позицию
+    отличную от статик!
+    <div class="name">Position:fixed</div>- позиция всегда отщитываеться от края окна браузера и не зависит от
+    <div class="name">Position: sticky</div>- cмещается в границах родителя
 
-
-
-    </p>
   </div>
-
-
-
-
+  <p class="title">Единицы, переполнение и уровни элементов (Units, Overflow & z-index)</p>
+  <figure>
+    <img src="units.jpg" alt="величины">
+    <figcaption>Абсолютные и относительные величины</figcaption>
+  </figure>
+  <p> Абсолютные величины - это значение остаётся постоянным </p>
+  <p>Относительные величины - их значения зависят от каких-то параметров и могут изменятся
+    <br>
+    Например дефолтный размер шрифта 16 пикселей, если вложенному элементам <code>li{ font-size:80%;}</code> поставить
+    значение 80%,
+    то в каждом дочернем li, шрифт уменьшиться, расчет идёт родительского размера. <br>
+    Первый список будет 12,8пикс-следующий 10,24пикс и тд. <br>
+    Если родителю заданный размер шрифта то отсчёт начинается от заданного размера
+    em - это увеличение шрифта в 2 раза <br>
+    rem - это увеличение шрифта в 2 раза, но отталкиваються от базовой велечины шрифта, и не зависят от заданного
+    родителю <br>
+    vw an vh- (viewport width and hight-)-видимая часть экрана, используется при создании overlay-
+  </p>
+  <img class="img_size" src="vw.jpg" alt="viewport width and hight-cоздание оверлей">
+  <p>Если поставить значения, 100 серая часть займёт всю видимую часть экрана</p>
+  <img src="calc.jpg" alt="свойство calc">
+  <p>С помощью calc можна вычеслять значения разных велечин</p>
+  <br>
+  <p> z-index - используя индекс мы подимаем одни элементы над другими, выше индекс више размещён элемент. Ести как
+    положительные так и отрицательные значеныя. Максимальное значение 9999</p>
+  <br>
+  <p>Overflow- свойство, которое используеться при переполнении блока </p>
+  <figure>
+    <img src="overflow.jpg" alt="Значения оверфлов">
+    <figcaption>Значения оверфлов</figcaption>
+  </figure>
 </body>
 
 

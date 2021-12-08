@@ -1,4 +1,12 @@
 @import"normalize.css"
+body {
+  font-family: 'Montserrat',
+  sans-serif;
+  font-family: 'Roboto',
+  sans-serif;
+  font-family: 'Ubuntu',
+  sans-serif;
+}
 * {
   color: rgb(22, 19, 19);
 }
@@ -189,4 +197,8 @@ li.list2:nth-child(2n + 1) {
   background-color: rgb(113, 111, 235);
    float: left;
    width: 150px;
+  
+}
+.img_size {
+  width: 600px;
 }

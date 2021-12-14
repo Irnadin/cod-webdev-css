@@ -1,14 +1,14 @@
 @import"normalize.css"
-body {
-  font-family: 'Montserrat',
-  sans-serif;
-  font-family: 'Roboto',
-  sans-serif;
-  font-family: 'Ubuntu',
-  sans-serif;
-}
+
+
 * {
   color: rgb(22, 19, 19);
+  
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 /* #region selectors */
 /*   * стилізує всі елементи на сторінці, часто використовується для "обнуления" */
